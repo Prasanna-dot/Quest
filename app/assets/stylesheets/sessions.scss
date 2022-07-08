@@ -82,24 +82,14 @@
     cursor: pointer;
  }
 
- #email{
+ #email, #password{
     width: 100%;
-    padding: 3% 4%;
+    padding: 2% 4%;
     background-color: #DFE6EA;
     border: none;
     outline: none;
     border-radius: 5px;
     margin-bottom: 5%;
- }
-
-#password{
-    width: 100%;
-    padding: 3% 4%;
-    background-color: #DFE6EA;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    margin-bottom: 3%;
  }
 
  .field label{

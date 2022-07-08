@@ -18,7 +18,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
  }
 
  body{
@@ -34,22 +33,6 @@
    width: 100%;
    height: 8vh;
    background-color: #DFE6EA;
-}
-
-.logo_div{
-   position: absolute;
-   left: 0;
-   top: 0;
-   width: 15%;
-   height: 8vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.logo_div img{
-   width: 60%;
-   cursor: pointer;
 }
 
 .menu_div{
@@ -68,6 +51,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   margin: 0;
 }
 
 .menu_div ul li{
@@ -76,6 +60,7 @@
    margin: 0% 3%;
    padding: 1% 3%;
    cursor: pointer;
+   font-size: 0.9vw;
 }
 
 .menu_div ul li:nth-child(4){
@@ -125,11 +110,6 @@
    transition: all 0.5s;
 }
 
-.container .col-md:hover {
-   box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
-   transition: all 0.5s;
-}
-
 .LogoDiv {
    margin: auto;
    width: 40%;
@@ -169,4 +149,135 @@
 
 .text-center{
    color: #fff;
+   font-family: 'Poppins';
+   font-size: 1.2vw;
+}
+
+
+.container-fluid{
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 100vh;
+}
+
+.signup_text{
+   position: absolute;
+   top: 3%;
+   right: 3%;
+}
+
+.signup_text a{
+   width: 100%;
+   text-align: end;
+   color: rgb(138, 138, 244);
+   text-decoration: none;
+}
+
+.signup_text a:hover{
+   background-color: transparent;
+   color: rgb(138, 138, 244);
+}
+
+.col{
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.col:nth-child(1){
+   width: 40%;
+}
+
+.col:nth-child(2){
+   width: 60%;
+}
+
+.col img{
+  height: 100%;
+}
+
+.col:nth-child(2) form{
+   width: 50%;
+}
+
+.actions{
+   width: 100%;
+   height: 8vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.actions input{
+   padding: 3% 15%;
+   font-family: 'Poppins', sans-serif;
+   background-color: #06734A;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   color: #fff;
+   cursor: pointer;
+}
+
+#user_name, #user_mobile, #user_email, #user_password, #user_password_confirmation{
+   width: 100%;
+   padding: 2% 3%;
+   background-color: #DFE6EA;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   margin-bottom: 5%;
+}
+
+.field label{
+   font-family: 'Poppins', sans-serif;
+}
+
+.field div{
+   display: flex;
+}
+
+.field div a{
+   width: 100%;
+   text-align: end;
+   color: rgb(138, 138, 244);
+   text-decoration: none;
+}
+
+.field div a:hover{
+   background-color: transparent;
+   color: rgb(138, 138, 244);
+}
+
+.logo{
+   width:17%;
+   height: 8vh;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+.logo a{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo a:hover{
+   background-color: transparent;
+}
+
+.logo img{
+   width: 50%;
+   height: auto;
+   cursor: pointer;
+}
+
+.logo img:hover{
+   opacity: 0.8;
 }
