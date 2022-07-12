@@ -1,13 +1,13 @@
-<section class="container-fluid">
+<section class="container-fluid login-main">
 <div class="signup_text">Already a member? <%= link_to "Log In", login_path %></div>
-    <div class="row">
-        <div class="col">
+    <div class="row login-row">
+        <div class="col-md login-col">
             <%= image_tag("login_img1.png") %>
             <div class="logo">
-                <a href="/home"><%= image_tag("quest_logo.png") %></a>
+                <a href="/home"><%= image_tag("quest_icon.png") %></a>
             </div>
         </div>
-        <div class="col">
+        <div class="col-md login-col">
             <%= render "form", user: @user %>
         </div>
 </section>

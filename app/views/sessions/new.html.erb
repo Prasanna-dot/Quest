@@ -1,13 +1,13 @@
-<section class="container-fluid">
+<div class="container-fluid login-main">
 <div class="signup_text">Not a member? <%= link_to "Sign up now", signup_path %></div>
-    <div class="row">
-        <div class="col">
+    <div class="row login-row">
+        <div class="col-md login-col">
             <%= image_tag("login_img1.png") %>
             <div class="logo">
-                <a href="/home"><%= image_tag("quest_logo.png") %></a>
+                <a href="/home"><%= image_tag("quest_icon.png") %></a>
             </div>
         </div>
-        <div class="col">
+        <div class="col-md login-col">
             <%= form_tag sessions_path do |form| %>
             <div class='field'>
                 <%= label_tag :email %>
@@ -23,4 +23,5 @@
             </div>
             <% end %>
         </div>
-</section>
+    </div>
+</div>

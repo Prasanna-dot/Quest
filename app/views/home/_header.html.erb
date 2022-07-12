@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+  <div class="container-fluid header-nav">
+    <div class="logo_img">
+      <%= image_tag("quest_icon.png") %>
+    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 header-ul">
+            <% if !current_user %>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/home">Home</a>
+                <div class="line"></div>
+              </li>
+              <% end %>
+                <li class="nav-item">
+                  <a class="nav-link interview" href="/interview">Interview Q&A</a>
+                  <div class="line active-intervuew"></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link quiz" href="/quiz">Quiz</a>
+                  <div class="line active-quiz"></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link evaluation" href="/evaluation">Evaluation</a>
+                  <div class="line active-evaluation"></div>
+                </li>
+                <% if current_user %>
+                  <li class="nav-item dropdown header-dropdown">
+                    <a class="header-profile" href="#" id="offcanvasNavbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="profile-pic"></div>
+                      <div class="profile-name">
+                        <%= current_user.name %>
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Dashbord</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/logout">Log Out</a>
+                      </li>
+
+                    </ul>
+                  </li>
+                  <% else %>
+                    <li>
+                      <a class="nav-link login" href="/login">Log In</a>
+                    </li>
+                    <% end %>
+          </ul>
+        </div>
+      </div>
+  </div>
+</nav>

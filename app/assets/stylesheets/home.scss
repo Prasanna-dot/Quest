@@ -1,3 +1,255 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.home-nav{
+  height: 8vh;
+  background-color: #07413e;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-nav .home-nav-div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfe6ea;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.home-main {
+  height: 92vh;
+  background-color: #07413e;
+}
+
+.home-row {
+  height: 100%;
+}
+
+.home-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.home-col div{
+  width: 80%;
+  color: #dfe6ea;
+}
+
+.home-col div h1{
+  font-weight: bolder;
+  font-size: 2.5vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-col div p{
+  font-size: 1.2vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-col div button{
+  padding: 1.5% 5%;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  background-color: #06734a;
+  border: none;
+  outline: none;
+  color: #dfe6ea;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .home-col div h1{
+    font-weight: bolder;
+    font-size: 6.3vw;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  .home-col div p{
+    font-size: 3vw;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .home-col div a{
+    text-decoration: none;
+  }
+  
+  .home-col div button{
+    padding: 3% 20%;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    background-color: #06734a;
+    border: none;
+    outline: none;
+    color: #dfe6ea;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.home-nav .home-nav-div img {
+  width: 4%;
+  cursor: pointer;
+}
+
+.home-nav .home-nav-div img:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .home-nav{
+    background-color: #dfe6ea;
+  }
+
+  .home-nav .home-nav-div img {
+    width: 10%;
+    position: absolute;
+    left: 5%;
+  }
+
+  .home-nav .home-nav-div button {
+    width: 10%;
+    position: absolute;
+    right: 5%;
+  }
+
+  .home-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 50%;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+}
+
+.nav-ul li {
+  position: relative;
+  margin: 0% 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-ul li div {
+  background-color: #06734a;
+  width: 0%;
+  height: 7%;
+  position: absolute;
+  bottom: 10%;
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.nav-ul li a {
+  color: #07080d;
+  font-family: "Poppins", sans-serif;
+  font-size: 4vw;
+}
+
+.nav-ul li:nth-child(5) {
+  background-color: #06734a;
+  border-radius: 5px;
+}
+
+.nav-ul li:nth-child(1) div {
+  background-color: #06734a;
+  width: 40%;
+  height: 7%;
+  position: absolute;
+  bottom: 10%;
+  border-radius: 100px;
+}
+
+.nav-ul li:hover div {
+  width: 40%;
+  transition: all 0.5s;
+}
+
+.nav-ul li:nth-child(5) {
+  padding: 0% 1%;
+}
+
+.nav-ul li:nth-child(5) a {
+  color: #fff;
+}
+
+.nav-ul li:nth-child(5) a:hover {
+  color: #fff;
+}
+
+.nav-ul li:nth-child(1) a {
+  color: #06734a;
+}
+
+.nav-ul li a:hover {
+  color: #06734a;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-ul li {
+    position: relative;
+  }
+
+  .nav-ul li div {
+    background-color: #06734a;
+    width: 0%;
+    height: 7%;
+    position: absolute;
+    bottom: 10%;
+    border-radius: 100px;
+    transition: all 0.5s;
+  }
+
+  .nav-ul li:nth-child(1) div {
+    background-color: #06734a;
+    width: 40%;
+    height: 7%;
+    position: absolute;
+    bottom: 10%;
+    border-radius: 100px;
+  }
+
+  .nav-ul li:hover div {
+    width: 40%;
+    transition: all 0.5s;
+  }
+
+  .nav-ul li a {
+    color: #07080d;
+    font-family: "Poppins", sans-serif;
+    font-size: 1vw;
+  }
+
+  .nav-ul li:nth-child(5) {
+    background-color: #06734a;
+    border-radius: 5px;
+  }
+
+  .nav-ul li:nth-child(5) a {
+    color: #fff;
+  }
+
+  .nav-ul li:nth-child(5) a:hover {
+    color: #fff;
+  }
+
+  .nav-ul li:nth-child(1) a {
+    color: #06734a;
+  }
+
+  .nav-ul li a:hover {
+    color: #06734a;
+  }
+}

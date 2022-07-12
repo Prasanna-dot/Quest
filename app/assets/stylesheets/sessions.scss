@@ -1,13 +1,23 @@
-// Place all the styles related to the sessions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
-.container-fluid{
-    padding: 0;
-    margin: 0;
-    width: 100%;
+.login-main{
     height: 100vh;
- }
+}
+
+.login-row{
+    height: 100%;
+}
+
+.login-col{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-col img{
+    height: 100%;
+}
 
  .signup_text{
     position: absolute;
@@ -26,44 +36,12 @@
     background-color: transparent;
     color: rgb(138, 138, 244);
  }
- .row{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
- }
-
- .col{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
- }
-
- .col:nth-child(1){
-    width: 40%;
- }
-
- .col:nth-child(2){
-    width: 60%;
- }
-
- .col img{
-   height: 100%;
- }
-
- .col:nth-child(2) form{
+ 
+ .login-col:nth-child(2) form{
     width: 50%;
-    // background-color: bisque;
- }
+}
 
-// .field{
-//     background-color: blue;
-//  }
-
- .actions{
+.actions{
     width: 100%;
     height: 8vh;
     display: flex;
@@ -71,6 +49,7 @@
     align-items: center;
  }
 
+ 
  .actions input{
     padding: 3% 15%;
     font-family: 'Poppins', sans-serif;
@@ -82,7 +61,7 @@
     cursor: pointer;
  }
 
- #email, #password{
+ #email, #password, #user_name, #user_mobile, #user_email, #user_password, #user_password_confirmation{
     width: 100%;
     padding: 2% 4%;
     background-color: #DFE6EA;
@@ -111,3 +90,74 @@
     background-color: transparent;
     color: rgb(138, 138, 244);
  }
+
+ .logo{
+    width:15%;
+    height: 8vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+ }
+ 
+ .logo a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .logo a:hover{
+    background-color: transparent;
+ }
+ 
+ .logo img{
+    width: 20%;
+    height: auto;
+    cursor: pointer;
+ }
+ 
+ .logo img:hover{
+    opacity: 0.8;
+ }
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        width:15%;
+        height: 8vh;
+        position: absolute;
+        left: 3%;
+        top: 0;
+     }
+
+    .signup_text{
+        opacity: 1;
+        z-index: 1000;
+        position: absolute;
+        top: 3%;
+        right: 7%;
+     }
+
+    .logo img{
+        width: 60%;
+        height: auto;
+        z-index: 1000;
+     }
+
+    .login-col:nth-child(1) img{
+        opacity: 0;
+    }
+
+    .login-col:nth-child(1) a img{
+        opacity: 1;
+    }
+
+    .login-col:nth-child(2){
+        position: absolute;
+        top: 0;
+    }
+
+    .login-col:nth-child(2) form{
+        width: 90%;
+    }
+}
